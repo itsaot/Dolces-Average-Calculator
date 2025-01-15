@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Average Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dolce is Messing Around</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Calculate Your Average</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="file-upload">Upload your marks document (CSV, Excel or pdf):</label>
+                <input type="file" id="file-upload" name="marksFile" accept=".csv, .xlsx">
+                <button type="button" onclick="uploadFile()">Calculate Average</button>
+            </form>
+            <hr>
+            <form id="manual-form">
+                <label for="marks-input">Enter your marks manually (comma separated):</label>
+                <input type="text" id="marks-input" placeholder="e.g. 85, 90, 78">
+                <button type="button" onclick="calculateManualAverage()">Calculate Average</button>
+            </form>
+        </section>
+        <section id="results-section">
+            <h2>Results</h2>
+            <p id="average-result"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
