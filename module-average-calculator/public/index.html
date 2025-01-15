@@ -14,7 +14,7 @@
         <section id="input-section">
             <h2>Calculate Your Average</h2>
             <form id="upload-form" enctype="multipart/form-data">
-                <label for="file-upload">Upload your marks document (CSV, Excel or pdf):</label>
+                <label for="file-upload">Upload your marks document (CSV, Excel, or PDF) from the ITS portal:</label>
                 <input type="file" id="file-upload" name="marksFile" accept=".csv, .xlsx">
                 <button type="button" onclick="uploadFile()">Calculate Average</button>
             </form>
@@ -24,7 +24,7 @@
                 <input type="text" id="marks-input" placeholder="e.g. 85, 90, 78">
                 <button type="button" onclick="calculateManualAverage()">Calculate Average</button>
             </form>
-        </section>
+        </section> 
         <section id="results-section">
             <h2>Results</h2>
             <p id="average-result"></p>
